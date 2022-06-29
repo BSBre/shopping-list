@@ -1,0 +1,23 @@
+.strikethrough {
+    text-decoration: line-through;
+}
+.dashboardButton {
+    color: white;
+    padding: 5px;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    float: right;
+  }
+
+  .addItemButton {
+    background: #49D14F;
+    border: 1px solid #49D14F;
+  }
+
+  .logoutButton {
+    background: grey;
+    border: 1px solid grey;
+    margin-right: 10px;
+  }

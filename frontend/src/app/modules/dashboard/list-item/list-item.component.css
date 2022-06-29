@@ -1,0 +1,48 @@
+.listItemContainer {
+    padding: 15px;
+}
+
+p {
+    display: flex;
+    margin-bottom: 5px;
+}
+
+.icons {
+    cursor: pointer;
+}
+
+.editIcon {
+    color: lightskyblue;
+}
+
+.saveIcon{
+    color: lightgreen;
+}
+
+.deleteIcon {
+    color: red;
+}
+
+::ng-deep .mat-checkbox .mat-checkbox-background{
+    background-color: lightblue;
+    border: 1px solid darkgray;
+}
+
+.checkboxSpan{
+    margin-left: 15px;
+    vertical-align: middle;
+}
+
+.strikethrough{
+    text-decoration: line-through;
+}
+
+.listItemName{
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+.editInput {
+    width: 30px;
+    border-bottom: 1px solid grey;
+}

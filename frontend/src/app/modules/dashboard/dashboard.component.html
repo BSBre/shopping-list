@@ -1,0 +1,20 @@
+<div class = "row marginAuto" style = "margin-top: 1%;">
+    <div class = "col-12">
+        <button mat-menu-item class = "dashboardButton logoutButton" (click) = "logout()">Logout</button>
+        <button mat-menu-item class = "dashboardButton addItemButton" (click) = "goToAddNewItemPage()" style = "margin-right: 15px;">Add new item</button>
+    </div>
+</div>
+<div class = "row marginClass" *ngIf = "error" style = "width: 50%;">
+    <div class = "col-6 wrongInfoDiv marginClass">
+      Fields must be filled in correctly 
+    </div>
+  </div>
+<div class = "row marginClass">
+    <div class = "col-6 marginClass">
+            <div class = "row" *ngFor = "let shoppingListItem of shoppingList">
+                <div class = "col-7 marginClass">
+                    <app-list-item [shoppingListItem] = "shoppingListItem" (listItemDeleted) = "deleteShoppingistItem($event)" (listItemCheck) = "checkShoppingListItem($event, shoppingListItem.shoppingListId, shoppingListItem.id)" (listItemEdit) = "editShoppingListItem($event, shoppingListItem.shoppingListId, shoppingListItem.id)"></app-list-item>
+                </div>
+            </div>
+    </div>
+</div>

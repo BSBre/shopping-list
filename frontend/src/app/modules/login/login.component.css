@@ -1,0 +1,25 @@
+.loginPageContainer {
+    background-color: white;
+    background-image: url('https://firebasestorage.googleapis.com/v0/b/leste-mobile.appspot.com/o/loginBackground.png?alt=media&token=0a27bfdb-601e-4660-89e1-4133b98688a2');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .inputIcon{
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 5px;
+  }
+
+  .loginBtnColumn {
+    margin: auto;
+    text-align: center;
+  }
+
+  .imageIcon{
+    float: right;
+    padding-right: 15px;
+  }
+  
+  

@@ -1,0 +1,126 @@
+body {
+  font-family: Lato, 'Alegreya Sans';
+}
+
+::ng-deep button {
+  outline: none !important;
+}
+
+::ng-deep input {
+  border: none;
+}
+
+::ng-deep input:focus {
+  border: none;
+  outline: none !important;
+}
+
+::ng-deep form {
+  text-align: center;
+}
+
+::ng-deep .wrongInfoDiv {
+  display: block;
+  width: 70%;
+  color: #0E0D35;
+  background: #FFC9C9;
+  box-shadow: 0px 10px 35px rgba(111, 126, 201, 0.25);
+  border-radius: 15.5px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  letter-spacing: 0.5px;
+  padding: 5%;
+  text-align: center;
+}
+
+::ng-deep .submitButton {
+  display: block;
+  width: 70%;
+  margin: 7% auto;
+  color: white;
+  height: 45px;
+  background: #49D14F;
+  border: 1px solid #49D14F;
+  box-shadow: 0px 10px 35px rgba(111, 126, 201, 0.25);
+  border-radius: 15px;
+  font-weight: bold;
+  font-size: 16px;
+  letter-spacing: 0.5px;
+}
+
+::ng-deep .matInputFieldForm {
+  width: 70%;
+  display: block;
+  margin: auto;
+  margin-bottom: 5%;
+  font-size: 16px;
+  padding: 10px;
+  padding-left: 5px;
+  border: 1px solid #E4DFDF;
+  background-color: white;
+  border-radius: 12px;
+  box-sizing: border-box;
+}
+
+::ng-deep .inputFormField {
+  display: inline-block;
+  vertical-align: middle;
+  padding-left: 10px;
+}
+
+::ng-deep .pageContainer {
+  top: 0;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  background-color: #e7f5fe;
+}
+
+::ng-deep .formContainer {
+  height: 100%;
+  width: 50%;
+  margin: auto;
+}
+
+::ng-deep .formInnerContainer {
+  margin: auto;
+  margin-top: 7%;
+  width: 80%;
+}
+
+::ng-deep .title {
+  color: #0E0D35;
+  font-weight: bold;
+  font-style: normal;
+  text-align: center
+}
+
+::ng-deep .buttonLabel {
+  font-weight: bold;
+  font-size: 16px;
+  letter-spacing: 0.5px;
+  vertical-align: middle;
+  margin: auto;
+}
+
+::ng-deep .marginClass {
+  margin: auto;
+}
+
+::ng-deep .formLabel {
+  display: block;
+  width: 70%;
+  margin: auto;
+  font-weight: bold;
+  text-align: left;
+}
+
+::ng-deep mat-error {
+  margin-top: 2%;
+  color: red;
+}

@@ -1,0 +1,15 @@
+<div class = "row listItemContainer">
+    <div class = "col-8">
+        <h3 class = "listItemName" [class] = "shoppingListItem.checked ? 'strikethrough' : null">{{shoppingListItem.name}} <span class = "checkboxSpan"><mat-checkbox 
+            [checked]="shoppingListItem.checked" class="checkbox" (change) = "checkShoppingListItem($event)">
+</mat-checkbox></span></h3> 
+        <p><span class = "listItemName">Quantity: </span> <span *ngIf = "!isEdit"> {{shoppingListItem.quantity}}</span> <span *ngIf = "isEdit"><input class = "editInput" [(ngModel)] = "shoppingListItem.quantity" autofocus ></span> </p>
+        <p><span class = "listItemName">Price: </span> <span *ngIf = "!isEdit"> {{shoppingListItem.price}}</span> <span *ngIf = "isEdit"> <input class = "editInput" [(ngModel)] = "shoppingListItem.price"></span> $</p>
+    </div>
+    <div class = "col-2 marginClass" style = "float: right">
+        <mat-icon *ngIf = "!isEdit" class = "icons editIcon" (click) = "editShoppingListItem()">edit</mat-icon>
+        <mat-icon *ngIf = "isEdit" class = "icons saveIcon" (click) = "saveShoppingListItem()">check</mat-icon>
+        <mat-icon class = "icons deleteIcon" (click) = "deleteShoppingistItem(shoppingListItem.shoppingListId, shoppingListItem.id)">delete</mat-icon>
+    </div>
+</div>
+<hr/>

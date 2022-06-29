@@ -1,0 +1,43 @@
+<div class="pageContainer loginPageContainer">
+  <div class="col-xs-12 formContainer">
+    <div class="formInnerContainer">
+      <div class="title">
+        <h2>Log in</h2>
+      </div>
+      <form action="" #userLoginForm="ngForm" style = "margin-top: 7%;" (ngSubmit)="onSubmit(userLoginForm)">
+        <label class = "formLabel">Username</label>
+        <mat-form-field class="matInputFieldForm">
+          <span class = "inputIcon">
+            <img src = {{userNameIconUrl}}>
+          </span>
+          <span class = "inputFormField">
+            <input matInput required name="userName" ngModel #userName="ngModel">
+          </span>
+          <mat-error *ngIf = "error">All fields must be filled in correctly </mat-error>
+        </mat-form-field>
+        <label class = "formLabel">Password</label>
+        <mat-form-field class="matInputFieldForm">
+          <span class = "inputIcon">
+            <img src = {{passwordIconUrl}}>
+          </span>
+         <span class = "inputFormField">
+          <input matInput type = "password" required name="password" ngModel
+          #password="ngModel">
+         </span>
+         <mat-error *ngIf = "error">All fields must be filled in correctly </mat-error>
+        </mat-form-field>
+
+        <button class="submitButton" type="submit">
+          <div class = "row">
+            <div class = "col-1"></div>
+            <div class = "col-9 loginBtnColumn">
+              <h3 class = "buttonLabel">Log in</h3>
+            </div>
+           <div class = "col-1"><img class = "imageIcon" src = {{loginIconUrl}}></div>
+          </div>
+        </button>
+      </form>
+    </div>
+
+  </div>
+</div>

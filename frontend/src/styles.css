@@ -1,0 +1,8 @@
+html, body { height: 100%; overflow-y: initial !important; }
+body { margin: 0;}
+
+/* Importing Bootstrap SCSS file. */
+@import '~bootstrap/css/bootstrap';
+
+html, body { height: 100%; overflow-y: initial !important; font-family: Lato, 'Alegreya Sans'; color: #0E0D35}
+body { margin: 0; font-family: Lato, 'Alegreya Sans';}

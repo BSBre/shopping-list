@@ -1,0 +1,30 @@
+<div class="pageContainer">
+  <div class="formContainer">
+    <div class="formInnerContainer">
+      <div class="title">
+        <h2>Add new item</h2>
+      </div>
+      <form action="" #addItemForm="ngForm" style="margin-top: 7%;" (ngSubmit)="onSubmit(addItemForm)">
+        <input matInput ngModel name="shoppingListId" [ngModel]="shoppingListId" hidden>
+        <label class="formLabel">Name</label>
+        <mat-form-field class="matInputFieldForm">
+          <input matInput required name="name" ngModel #name="ngModel">
+          <mat-error *ngIf="error">All fields must be filled in correctly </mat-error>
+        </mat-form-field>
+        <label class="formLabel">Quantity</label>
+        <mat-form-field class="matInputFieldForm">
+          <input matInput required name="quantity" ngModel #quantity="ngModel">
+          <mat-error *ngIf="error">All fields must be filled in correctly </mat-error>
+        </mat-form-field>
+        <label class="formLabel">Price</label>
+        <mat-form-field class="matInputFieldForm">
+          <input matInput required name="price" ngModel #price="ngModel">
+          <mat-error *ngIf="error">All fields must be filled in correctly </mat-error>
+        </mat-form-field>
+        <button class="submitButton" type="submit">
+          <h3 class="buttonLabel">Add item</h3>
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
